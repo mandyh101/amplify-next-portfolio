@@ -15,20 +15,29 @@ const client = generateClient<Schema>();
 export default function App() {
   const [todos, setTodos] = useState<Array<Schema["Todo"]["type"]>>([]);
 
+  // sets the list of todos from the database
+  // TODO look up the functions observe query and subscribe
   function listTodos() {
     client.models.Todo.observeQuery().subscribe({
       next: (data) => setTodos([...data.items]),
     });
   }
 
+  // Call the listTodos function when the component mounts
   useEffect(() => {
     listTodos();
   }, []);
 
+  // create a new todo in the database
   function createTodo() {
     client.models.Todo.create({
       content: window.prompt("Todo content"),
     });
+  }
+
+  // delete a todo item from the database
+  function deleteTodo(id: string) {
+    client.models.Todo.delete({ id });
   }
 
   return (
@@ -37,7 +46,9 @@ export default function App() {
       <button onClick={createTodo}>+ new</button>
       <ul>
         {todos.map((todo) => (
-          <li key={todo.id}>{todo.content}</li>
+          <li key={todo.id}>
+            {todo.content}
+          </li>
         ))}
       </ul>
       <div>
