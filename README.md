@@ -1,16 +1,19 @@
-## AWS Amplify Next.js (App Router) Starter Template
-
-This repository provides a starter template for creating applications using Next.js (App Router) and AWS Amplify, emphasizing easy setup for authentication, API, and database capabilities.
+# AWS Amplify Next.js todo app
 
 ## Overview
 
-This template equips you with a foundational Next.js application integrated with AWS Amplify, streamlined for scalability and performance. It is ideal for developers looking to jumpstart their project with pre-configured AWS services like Cognito, AppSync, and DynamoDB.
+This repository started with a base starter template for creating applications using Next.js (App Router) and AWS Amplify. I am using this project as a hands-on way to understand how to deploy using AWS amplify, and learn the set up required for API and database management. 
+The template comes pre-configured AWS services like Cognito, AppSync, and DynamoDB:
 
 ## Features
 
 - **Authentication**: Setup with Amazon Cognito for secure user authentication.
 - **API**: Ready-to-use GraphQL endpoint with AWS AppSync.
 - **Database**: Real-time database powered by Amazon DynamoDB.
+
+## Start up local environment
+`npm install` (First time only)
+`npm run dev` to start local env
 
 ## Deploying to AWS
 
