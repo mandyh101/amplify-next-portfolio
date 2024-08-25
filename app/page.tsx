@@ -46,13 +46,13 @@ export default function App() {
     <main className="flex flex-col items-stretch gap-y-3 max-w-[500px]">
       <h1 className="font-bold text-3xl">Today I will...</h1>
       <button className="btn-primary" onClick={createTodo}>+ new</button>
-      <ul className="pl-0 list-none flex flex-col my-8 space-y-1 bg-transparent rounded-lg max-w-[500px] overflow-hidden break-all text-white">
+      <ul className="pl-0 list-none flex flex-col my-8 space-y-0.5 bg-black border border-black rounded-lg max-w-[500px] overflow-hidden break-all text-white">
         { todos.length === 0 && 
           <p className="p-2 text-black border border-white flex justify-between items-center rounded-lg">✅ Looks like you have nothing to do!</p> 
         }
         {todos.map((todo) => (
           <li 
-          className="bg-white p-2 text-black flex justify-between items-center rounded-lg"
+          className="bg-white p-2 text-black flex justify-between items-center"
           key={todo.id}
           >
             <span className="pr-4">{todo.content}</span>
