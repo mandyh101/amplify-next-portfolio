@@ -56,9 +56,8 @@ export default function App() {
           </li>
         ))}
       </ul>
-      <div>
-        🥳 Try creating a new todo. Keep your todo lists short and simple. Make it possible to achieve something every day!
-        <br />
+      <div className="flex flex-col space-y-2">
+        <p>🥳 Try creating a new todo. Keep your todo lists short and simple. Make it possible to achieve something every day!</p>
         <p>Don't forget to mark your completed tasks as done!</p>
         {/* TODO feedback button */}
       </div>
