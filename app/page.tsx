@@ -44,7 +44,7 @@ export default function App() {
   return (
     // Todo check the widths for mobile, tablet and desktop
     <main className="flex flex-col items-stretch gap-y-3 max-w-[500px]">
-      <h1 className="font-bold text-2xl">My todos</h1>
+      <h1 className="font-bold text-3xl">Today I will...</h1>
       <button className="btn-primary" onClick={createTodo}>+ new</button>
       <ul className="pl-0 list-none flex flex-col my-8 space-y-1 bg-transparent rounded-lg max-w-[500px] overflow-hidden break-all text-white">
         { todos.length === 0 && 
