@@ -45,9 +45,10 @@ export default function App() {
     <main className="flex flex-col items-stretch gap-y-3 max-w-[500px]">
       <h1 className="font-bold text-2xl">My todos</h1>
       <button className="btn-primary" onClick={createTodo}>+ new</button>
-      <ul>
+      <ul className="pl-0 list-none flex flex-col my-8 border border-black space-y-1 bg-black rounded-lg overflow-auto text-white">
         {todos.map((todo) => (
           <li 
+          className="bg-white p-2 text-black hover:bg-linkHover"
           key={todo.id}
           onClick={() => deleteTodo(todo.id)} 
           >

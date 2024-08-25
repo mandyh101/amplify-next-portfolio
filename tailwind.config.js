@@ -48,6 +48,7 @@ module.exports = {
         cardBorder: '#838687',
         btnPrimary: '#1a1a1a',
         btnPrimaryHover: '#646cff',
+        linkHover: '#dadbf9',
       },
     },
   },
