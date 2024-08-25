@@ -3,10 +3,10 @@
 import { useState, useEffect } from "react";
 import { generateClient } from "aws-amplify/data";
 import type { Schema } from "@/amplify/data/resource";
-import "./../app/app.css";
+import "./globals.css";
 import { Amplify } from "aws-amplify";
 import outputs from "@/amplify_outputs.json";
-import "@aws-amplify/ui-react/styles.css";
+// import "@aws-amplify/ui-react/styles.css";
 
 Amplify.configure(outputs);
 
@@ -41,9 +41,10 @@ export default function App() {
   }
 
   return (
-    <main>
-      <h1>My todos</h1>
-      <button onClick={createTodo}>+ new</button>
+    // Todo check the widths for mobile, tablet and desktop
+    <main className="flex flex-col items-stretch gap-y-3 max-w-[500px]">
+      <h1 className="font-bold text-2xl">My todos</h1>
+      <button className="btn-primary" onClick={createTodo}>+ new</button>
       <ul>
         {todos.map((todo) => (
           <li 
@@ -55,11 +56,10 @@ export default function App() {
         ))}
       </ul>
       <div>
-        🥳 App successfully hosted. Try creating a new todo.
+        🥳 Try creating a new todo. Keep your todo lists short and simple. Make it possible to achieve something every day!
         <br />
-        <a href="https://docs.amplify.aws/nextjs/start/quickstart/nextjs-app-router-client-components/">
-          Review next steps of this tutorial.
-        </a>
+        <p>Don't forget to mark your completed tasks as done!</p>
+        {/* TODO feedback button */}
       </div>
     </main>
   );
