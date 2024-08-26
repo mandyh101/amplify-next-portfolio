@@ -25,6 +25,12 @@ This app is hosted on AWS amplify. Changes pushed to main are automatically depl
 - merge feature branch to main to deploy to the live app
 - view the app to check your changes :https://main.d3vhrbkq2eoqgb.amplifyapp.com/
 
+## feature to do list
+- [ ] Todo list loading spinner
+- [ ] edit a todo
+- [ ] improved UI for adding a list item
+- [ ] create user login auth flow
+- [ ] Add a feedback button for users to request improved functionality
 
 # Generic read me info for AWS amplify
 ## Deploying to AWS
