@@ -1,4 +1,5 @@
 # AWS Amplify Next.js todo app
+View the app and create your own todo list: https://main.d3vhrbkq2eoqgb.amplifyapp.com/
 
 ## Overview
 
@@ -15,6 +16,17 @@ The template comes pre-configured AWS services like Cognito, AppSync, and Dynamo
 `npm install` (First time only)
 `npm run dev` to start local env
 
+## Building
+- always create a new branch to test new features (any pushes to main will automatically deploy)
+- create a PR to merge to main
+
+## Deployment
+This app is hosted on AWS amplify. Changes pushed to main are automatically deployed! 
+- merge feature branch to main to deploy to the live app
+- view the app to check your changes :https://main.d3vhrbkq2eoqgb.amplifyapp.com/
+
+
+# Generic read me info for AWS amplify
 ## Deploying to AWS
 
 For detailed instructions on deploying your application, refer to the [deployment section](https://docs.amplify.aws/nextjs/start/quickstart/nextjs-app-router-client-components/#deploy-a-fullstack-app-to-aws) of our documentation.
